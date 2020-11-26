@@ -10,7 +10,8 @@ export default {
   name: 'new2',
   data () {
     return {
-      msg: 'Welcome to new2'
+      msg: 'Welcome to new2',
+      word2:'',
     }
   },
 
