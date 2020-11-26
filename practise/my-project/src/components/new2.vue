@@ -4,12 +4,12 @@
           <li>{{msg}}</li>
           <li>{{key}}</li>
       </ul>
-    <button @click="n2ton4">new2向new4send</button>
+    <button @click="n2ton4">new2send</button>
   </div>
 </template>
 
 <script>
-import EventBus from './event-bus'
+import {EventBus} from './event-bus'
 export default {
   name: 'new2',
   data () {
@@ -30,7 +30,7 @@ export default {
   methods:{
       n2ton4(){
           EventBus.$emit('action',{
-              num:this.hello
+              msg:this.hello
           })
       }
   }
@@ -40,5 +40,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+ul,li{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 </style>
