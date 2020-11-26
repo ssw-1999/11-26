@@ -1,7 +1,6 @@
 <template>
   <div>
     {{msg}}
-    {{msg}}
   </div>
 </template>
 
@@ -13,18 +12,18 @@ export default {
       msg: 'Welcome to Your Vue.js App'
     }
   },
-  methods:{
-    getData:function(){
-      this.axios.post(
-        '/v3/acfun/crawl/content/condition',
-        { }).then(function(res){
-          console.log(res);
-        })
-    }
-  },
-  created(){
-    this.getData();
-  }
+  // methods:{
+  //   getData:function(){
+  //     this.axios.post(
+  //       '/v3/acfun/crawl/content/condition',
+  //       { }).then(function(res){
+  //         console.log(res);
+  //       })
+  //   }
+  // },
+  // created(){
+  //   this.getData();
+  // }
 }
 </script>
 
