@@ -8,24 +8,32 @@
           </li>
           <li>{{prop}}</li>
       </ul>
+      <new2/>
   </div>
 </template>
 
 <script>
+import new2 from './new2'
 export default {
   name: 'new1',
   data () {
     return {
       msg: 'Welcome to new1',
-      word1:""
+      word1:"",
+      son:"son1"
     }
+  },
+  components:{
+      new2
   },
   props:{
       prop:String
   },
   methods:{
       sendData(){
+          console.log(this.$parent.msg)
           this.$emit('getData',this.word1)
+          this.word1="";
       }
   }
 //   methods:{
@@ -47,5 +55,7 @@ export default {
 <style scoped>
 ul li{
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 </style>

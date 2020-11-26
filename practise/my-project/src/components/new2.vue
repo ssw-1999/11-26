@@ -1,7 +1,7 @@
 <template>
   <div>
     {{msg}}
-    
+    {{key}}
   </div>
 </template>
 
@@ -14,6 +14,15 @@ export default {
       word2:'',
     }
   },
+  inject:['hello'],
+  computed:{
+      key(){
+        return this.hello;
+      }
+  },
+  created(){
+      console.log(this.hello);
+  }
 
 }
 </script>
