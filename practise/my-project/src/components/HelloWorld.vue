@@ -8,6 +8,7 @@
     <new1 @getData="updateData" :prop="fromVue1" ref="new1"></new1>
     <new3 ref="new3"></new3>
   </div>
+  
 </template>
 
 <script>
