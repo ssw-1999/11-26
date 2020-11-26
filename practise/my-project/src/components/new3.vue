@@ -1,10 +1,12 @@
 <template>
   <div>
     {{msg}}
+    <new4/>
   </div>
 </template>
 
 <script>
+import new4 from './new4'
 export default {
   name: 'new3',
   data () {

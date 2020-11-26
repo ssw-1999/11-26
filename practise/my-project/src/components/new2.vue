@@ -1,11 +1,15 @@
 <template>
   <div>
-    {{msg}}
-    {{key}}
+      <ul>
+          <li>{{msg}}</li>
+          <li>{{key}}</li>
+      </ul>
+    <button @click="n2ton4">new2向new4send</button>
   </div>
 </template>
 
 <script>
+import EventBus from './event-bus'
 export default {
   name: 'new2',
   data () {
@@ -22,6 +26,13 @@ export default {
   },
   created(){
       console.log(this.hello);
+  },
+  methods:{
+      n2ton4(){
+          EventBus.$emit('action',{
+              num:this.hello
+          })
+      }
   }
 
 }
