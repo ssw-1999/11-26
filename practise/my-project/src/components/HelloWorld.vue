@@ -21,7 +21,8 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App',
       fromVue1:'',
-      son1:''
+      son1:'',
+      omg:''
     }
   },
   components:{
