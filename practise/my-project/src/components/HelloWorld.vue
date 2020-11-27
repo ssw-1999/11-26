@@ -31,6 +31,7 @@ export default {
   provide:{
     hello:'hahaha'
   },
+  
   // computed:{
   //     son1(){
   //       console.log(this.$children);
