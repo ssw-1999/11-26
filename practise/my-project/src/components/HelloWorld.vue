@@ -14,6 +14,7 @@
 <script>
 import new1 from './new1'
 import new3 from './new3'
+import { mapState } from 'vuex'
 export default {
   name: 'HelloWorld',
   data () {
